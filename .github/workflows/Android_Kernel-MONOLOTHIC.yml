@@ -90,7 +90,8 @@ jobs:
     - name: Building Monolothic
       run: |
         cd kernel
-        ./build.sh
+        sudo chmod +rwx ./build.sh
+        sudo ./build.sh
 
 
     #- name: Upload to Release
