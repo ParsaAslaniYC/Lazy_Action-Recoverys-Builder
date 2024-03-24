@@ -74,7 +74,7 @@ jobs:
       
     - name: Build Environment
       run: |
-        sudo apt-get install git –core gnupg flex bison gperf libsdl-dev libesd0-dev libwxgtk2.6-dev build-essential zip curl libncurses5-dev zlib1g-dev ia32-libs lib32z1-dev lib32ncurses5-dev gcc-multilib g++-multilib adb
+        sudo apt-get install git gnupg flex bison gperf libsdl-dev build-essential zip curl libncurses5-dev zlib1g-dev lib32z1-dev lib32ncurses5-dev gcc-multilib g++-multilib adb
         #git clone https://github.com/gcc-mirror/gcc.git gcc
         git clone https://github.com/AspectPower/kernel_xiaomi_bengal_515.git -b Non-KSU kernel
 
