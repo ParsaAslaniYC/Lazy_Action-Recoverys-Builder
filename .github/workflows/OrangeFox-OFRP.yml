@@ -119,9 +119,9 @@ jobs:
             brand=$(sed -n 's/^[[:space:]]*PRODUCT_BRAND[[:space:]]*:=\s*\(.*\)/\1/p' "$file")
             codename=$(sed -n 's/^[[:space:]]*PRODUCT_DEVICE[[:space:]]*:=\s*\(.*\)/\1/p' "$file")
             if [[ -n "$makefile" && -n "$brand" && -n "$codename" ]]; then
-                DEVICE_MAKEFILE="$makefile"
-                DEVICE_DIRECTORY="device/$brand"
-                DEVICE_NAME="$codename"
+                DEVICE_MAKEFILE="twrp_amethyst"
+                DEVICE_DIRECTORY="device/xiaomi/amethyst"
+                DEVICE_NAME="amethyst"
                 echo "DEVICE_MAKEFILE=${DEVICE_MAKEFILE}" >> $GITHUB_ENV
                 echo "DEVICE_NAME=${DEVICE_NAME}" >> $GITHUB_ENV
                 echo "DEVICE_DIRECTORY=${DEVICE_DIRECTORY}" >> $GITHUB_ENV
